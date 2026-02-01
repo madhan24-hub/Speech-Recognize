@@ -1,5 +1,5 @@
 import numpy as np
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split,Httpresponse
 
 from speechemotionrecognition.utilities import get_data, get_feature_vector_from_mfcc
 
@@ -23,3 +23,7 @@ def extract_data(flatten):
 
 def get_feature_vector(file_path, flatten):
     return get_feature_vector_from_mfcc(file_path, flatten, mfcc_len=39)
+
+    def index(request):
+        return Httpresponse("This is index page")
+
